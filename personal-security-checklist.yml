@@ -1,4 +1,4 @@
-- title: Authentication XYX
+- title: Authentication
   slug: authentication
   description: Securing your online account login credentials
   icon: password
@@ -19,36 +19,6 @@
       [HowSecureIsMyPassword.net](https://howsecureismypassword.net), to get an idea of how quickly common
       passwords can be cracked. Read more about creating strong passwords:
       [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
-
-  - point: Use a Secure Password Manager
-    priority: Essential
-    details: >-
-      For most people it is going to be near-impossible to remember hundreds of strong and unique passwords.
-      A password manager is an application that generates, stores and auto-fills your login credentials for you.
-      All your passwords will be encrypted against 1 master passwords (which you must remember, and it should be
-      very strong). Most password managers have browser extensions and mobile apps, so whatever device you are on,
-      your passwords can be auto-filled. A good all-rounder is
-      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), or see
-      [Recommended Password Managers](https://awesome-privacy.xyz/essentials/password-managers)
-
-  - point: Avoid sharing passwords
-    priority: Essential
-    details: >-
-      While there may be times that you need to share access to an account with another person, you should
-      generally avoid doing this because it makes it easier for the account to become compromised. If you
-      absolutely do need to share a password for example when working on a team with a shared account this
-      should be done via features built into a password manager.
-
-  - point: Enable 2-Factor Authentication
-    priority: Essential
-    details: >-
-      2FA is where you must provide both something you know (a password) and something you have (such as a
-      code on your phone) to log in. This means that if anyone has got your password (e.g. through phishing,
-      malware or a data breach), they will not be able to log into your account. It's easy to get started,
-      download [an authenticator app](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
-      onto your phone, and then go to your account security settings and follow the steps to enable 2FA. Next
-      time you log in on a new device, you will be prompted for the code that displays in the app on your phone
-      (it works without internet, and the code usually changes every 30-seconds)
 
   - point: Keep Backup Codes Safe
     priority: Essential
