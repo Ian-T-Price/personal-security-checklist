@@ -1,4 +1,4 @@
-- title: Authentication
+- title: Authentication XXX
   slug: authentication
   description: Securing your online account login credentials
   icon: password
@@ -19,14 +19,6 @@
       [HowSecureIsMyPassword.net](https://howsecureismypassword.net), to get an idea of how quickly common
       passwords can be cracked. Read more about creating strong passwords:
       [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
-
-  - point: Don't reuse Passwords
-    priority: Essential
-    details: >-
-      If someone was to reuse a password, and one site they had an account with suffered a leak, then a
-      criminal could easily gain unauthorized access to their other accounts. This is usually done through
-      large-scale automated login requests, and it is called Credential Stuffing. Unfortunately this is all
-      too common, but it's simple to protect against- use a different password for each of your online accounts
 
   - point: Use a Secure Password Manager
     priority: Essential
@@ -554,7 +546,7 @@
     infrastructure is. Email-related fraud
     [is on the up](https://www.csoonline.com/article/3247670/email/email-security-in-2018.html),
     and without taking basic measures you could be at risk.
-    
+
 
     If a hacker gets access to your emails, it provides a gateway for your other
     accounts to be compromised (through password resets), therefore email security
