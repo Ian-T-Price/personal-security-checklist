@@ -14,9 +14,9 @@ export default component$(() => {
   const { theme, setTheme } = useTheme();
 
   const themes = [
-    'dark', 'light', 'night', 'cupcake', 
-    'bumblebee', 'corporate', 'synthwave', 'retro', 
-    'valentine', 'halloween', 'aqua', 'lofi', 
+    'dark', 'light', 'night', 'cupcake',
+    'bumblebee', 'corporate', 'synthwave', 'retro',
+    'valentine', 'halloween', 'aqua', 'lofi',
     'fantasy', 'dracula'
   ];
 
@@ -30,14 +30,14 @@ export default component$(() => {
 
   return (
     <>
-      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="navbar bg-base-100">
         <div class="flex-1">
           <div class="flex-none md:hidden">
             <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </label>
-          </div> 
+          </div>
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages"><Icon class="mr-2" icon="shield" width={28} height={28}  /></label>
             <h1>Digital Defense</h1>
@@ -95,7 +95,7 @@ export default component$(() => {
       </div>
 
       <div class="drawer-side z-10">
-        <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
+        <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
         <ul class="rounded-box menu p-4 w-80 min-h-full bg-base-200">
           <h2 class="flex text-primary">
           <Icon class="mr-2" icon="shield" width={16} height={16}  />
@@ -173,8 +173,8 @@ export default component$(() => {
           <div class="modal-action justify-start w-full flex flex-col gap-4">
               <div class="flex items-between w-full justify-between">
                 <label for="theme" class="label">Theme</label>
-                <select 
-                  id="theme" 
+                <select
+                  id="theme"
                   class="select select-bordered w-full max-w-xs"
                   onChange$={(event) => setTheme((event.target as HTMLSelectElement).value) }
                   >
