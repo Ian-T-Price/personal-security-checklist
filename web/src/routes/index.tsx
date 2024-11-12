@@ -9,7 +9,7 @@ import { ChecklistContext } from '~/store/checklist-context';
 
 import { useChecklist } from '~/store/local-checklist-store';
 
-export default component$(() => { 
+export default component$(() => {
   const checklists = useContext(ChecklistContext);
 
   const localChecklist = useChecklist();
