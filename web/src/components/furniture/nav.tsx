@@ -78,7 +78,7 @@ export default component$(() => {
                 checked={theme.theme === 'dark'}
                 onClick$={() => {
                   trackEvent('theme-toggle', { theme: theme.theme === 'dark' ? 'light' : 'dark' });
-                  setTheme(theme.theme === 'dark' ? 'light' : 'dark');
+                  // setTheme(theme.theme === 'dark' ? 'light' : 'dark');
                 }}
                 class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
               />
