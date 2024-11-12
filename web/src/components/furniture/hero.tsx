@@ -1,6 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import { gtag} from "../core/analytics";
-
 import Icon from "~/components/core/icon";
 
 export default component$(() => {
