@@ -1,6 +1,7 @@
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 
 import { component$ } from "@builder.io/qwik";
+import { Analytics } from "../analytics/analytics";
 
 export const RouterHead = component$(() => {
   const head = useDocumentHead();
@@ -11,7 +12,7 @@ export const RouterHead = component$(() => {
       {/* Basics */}
       <title>{head.title || 'Digital Defense - The ultimate personal security checklist to secure your digital life'}</title>
       <meta name="description" content="The ultimate personal security checklist to secure your digital life" />
-      
+
       {/* Site config */}
       <link rel="canonical" href={loc.url.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,6 +51,8 @@ export const RouterHead = component$(() => {
         <script key={s.key} {...s.props} dangerouslySetInnerHTML={s.script} />
       ))}
       <script defer data-domain="digital-defense.io" src="https://no-track.as93.net/js/script.js"></script>
+      {/* Google Analytics */}
+      <Analytics />
     </>
   );
 });
