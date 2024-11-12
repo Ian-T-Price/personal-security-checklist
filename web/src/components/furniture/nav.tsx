@@ -75,6 +75,13 @@ export default component$(() => {
                     url: 'https://github.com/lissy93/personal-security-checklist'
                   });
                 }}
+                onContextMenu$={(event) => {
+                  // Track the event when the context menu (right-click) is triggered
+                  trackEvent('external_link_click', {
+                    destination: 'GitHub',
+                    url: 'https://github.com/lissy93/personal-security-checklist'
+                  });
+                }}
               >
                 <Icon icon="github" width={16} height={16} />GitHub
               </a>
