@@ -5,7 +5,6 @@ import type { Section } from '~/types/PSC';
 import { useTheme } from '~/store/theme-store';
 import articles from '~/data/articles';
 import { ChecklistContext } from '~/store/checklist-context';
-import { trackEvent } from "../analytics/trackEvent";
 
 
 export default component$(() => {
@@ -77,8 +76,13 @@ export default component$(() => {
                 type="checkbox"
                 checked={theme.theme === 'dark'}
                 onClick$={() => {
-                  trackEvent('theme-toggle', { theme: setTheme(theme.theme === 'dark' ? 'light' : 'dark') });
-                  // setTheme(theme.theme === 'dark' ? 'light' : 'dark');
+                  const newTheme = theme.theme === 'dark' ? 'light' : 'dark';
+                  setTheme(newTheme);
+
+                  // Track the theme change event
+                  trackEvent('theme_change', {
+                    theme: newTheme
+                  });
                 }}
                 class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
               />
