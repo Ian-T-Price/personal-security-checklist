@@ -65,11 +65,21 @@ export default component$(() => {
               </details>
             </li>
             <li>
-              <a href="https://github.com/lissy93/personal-security-checklist"
-                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
-                <Icon icon="github" width={16} height={16}  />GitHub
+              <a
+                href="https://github.com/lissy93/personal-security-checklist"
+                class="tooltip flex tooltip-bottom"
+                data-tip="View / Edit Source & Data"
+                onClick$={() => {
+                  trackEvent('external_link_click', {
+                    destination: 'GitHub',
+                    url: 'https://github.com/lissy93/personal-security-checklist'
+                  });
+                }}
+              >
+                <Icon icon="github" width={16} height={16} />GitHub
               </a>
             </li>
+
           </ul>
           <div class="tooltip tooltip-bottom" data-tip="Theme">
             <label class="cursor-pointer grid place-items-center">
