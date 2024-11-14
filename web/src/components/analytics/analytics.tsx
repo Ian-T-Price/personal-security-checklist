@@ -1,4 +1,3 @@
-// src/components/analytics/analytics.tsx
 import { component$ } from '@builder.io/qwik';
 
 export const Analytics = component$(() => {

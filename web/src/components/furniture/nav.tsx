@@ -69,6 +69,8 @@ export default component$(() => {
                 href="https://github.com/lissy93/personal-security-checklist"
                 class="tooltip flex tooltip-bottom"
                 data-tip="View / Edit Source & Data"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick$={() => {
                   trackEvent('external_link_click', {
                     destination: 'GitHub',
