@@ -71,14 +71,21 @@ export default component$(() => {
                 data-tip="View / Edit Source & Data"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick$={() => {
+                onClick$={(event) => {
+                  // Prevent default behavior first
+                  event.preventDefault();
+
+                  // Track the event
                   trackEvent('external_link_click', {
                     destination: 'GitHub',
                     url: 'https://github.com/lissy93/personal-security-checklist'
                   });
+
+                  // Manually open the URL in a new tab
+                  window.open('https://github.com/lissy93/personal-security-checklist', '_blank');
                 }}
                 onContextMenu$={() => {
-                  // Track the event when the context menu (right-click) is triggered
+                  // Track the event for right-click context menu
                   trackEvent('external_link_click', {
                     destination: 'GitHub',
                     url: 'https://github.com/lissy93/personal-security-checklist'
@@ -88,6 +95,7 @@ export default component$(() => {
                 <Icon icon="github" width={16} height={16} />GitHub
               </a>
             </li>
+
 
           </ul>
           <div class="tooltip tooltip-bottom" data-tip="Theme">
