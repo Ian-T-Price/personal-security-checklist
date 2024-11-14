@@ -65,36 +65,32 @@ export default component$(() => {
               </details>
             </li>
             <li>
+              {/* Wrapper <a> with target="_blank" */}
               <a
                 href="https://github.com/lissy93/personal-security-checklist"
-                class="tooltip flex tooltip-bottom"
-                data-tip="View / Edit Source & Data"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="tooltip flex tooltip-bottom"
+                data-tip="View / Edit Source & Data"
                 onClick$={(event) => {
-                  // Prevent default behavior first
-                  event.preventDefault();
-
-                  // Track the event
                   trackEvent('external_link_click', {
                     destination: 'GitHub',
                     url: 'https://github.com/lissy93/personal-security-checklist'
                   });
-
-                  // Manually open the URL in a new tab
-                  window.open('https://github.com/lissy93/personal-security-checklist', '_blank');
                 }}
                 onContextMenu$={() => {
-                  // Track the event for right-click context menu
                   trackEvent('external_link_click', {
                     destination: 'GitHub',
                     url: 'https://github.com/lissy93/personal-security-checklist'
                   });
                 }}
               >
-                <Icon icon="github" width={16} height={16} />GitHub
+                <button class="btn btn-primary btn-lg">
+                  <Icon icon="github" width={16} height={16} /> View on GitHub
+                </button>
               </a>
             </li>
+
 
 
           </ul>
