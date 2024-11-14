@@ -72,7 +72,7 @@ export default component$(() => {
                 rel="noopener noreferrer"
                 class="tooltip flex tooltip-bottom"
                 data-tip="View / Edit Source & Data"
-                onClick$={(event) => {
+                onClick$={() => {
                   trackEvent('external_link_click', {
                     destination: 'GitHub',
                     url: 'https://github.com/lissy93/personal-security-checklist'
